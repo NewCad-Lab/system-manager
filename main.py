@@ -188,7 +188,7 @@ def merge_folders(folder_path2: str,  folder_path1 = 'systems/luciane/main', mer
     shutil.rmtree(folder_path1)
 
     #  Deletar a segunda pasta
-    shutil.rmtree(folder_path2)
+    #shutil.rmtree(folder_path2)
 
     # Renomear a nova pasta mesclada para o nome da pasta deletada
     new_folder_name = os.path.basename(folder_path1)  # Obtém o nome da pasta original
