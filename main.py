@@ -3,9 +3,11 @@ import os
 import shutil
 import sqlite3
 import uvicorn
-from fastapi import FastAPI
+from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from datetime import datetime
+from pathlib import Path
 
 app = FastAPI()
 
@@ -135,31 +137,18 @@ def merge_databases(db1_path: str, db2_path: str, output_db: str):
     conn_output.close()
 
 
-# Função para fazer o merge dos arquivos zip
-def merge_zip_files(zip1_path: str, zip2_path: str, output_zip: str):
-    # Diretórios temporários para extrair os arquivos
-    temp_dir1 = "temp_dir1"
-    temp_dir2 = "temp_dir2"
-
-    # Criar os diretórios temporários
-    os.makedirs(temp_dir1, exist_ok=True)
-    os.makedirs(temp_dir2, exist_ok=True)
-
-    # Extrair os arquivos ZIP
-    with zipfile.ZipFile(zip1_path, 'r') as zip_ref1:
-        zip_ref1.extractall(temp_dir1)
-
-    with zipfile.ZipFile(zip2_path, 'r') as zip_ref2:
-        zip_ref2.extractall(temp_dir2)
+def merge_folders(folder_path2: str,  folder_path1 = 'systems/luciane/main', merged_folder_path = 'systems/luciane/temp-folder'):
+    # Criar a nova pasta para os arquivos mesclados
+    os.makedirs(merged_folder_path, exist_ok=True)
 
     # Dicionário para armazenar o arquivo mais recente ou regras específicas
     latest_files = {}
 
-    # Comparar os arquivos e preservar os mais recentes
-    for dirpath, _, filenames in os.walk(temp_dir1):
+    # Comparar os arquivos e preservar os mais recentes da primeira pasta
+    for dirpath, _, filenames in os.walk(folder_path1):
         for file in filenames:
             file_path = os.path.join(dirpath, file)
-            relative_path = os.path.relpath(file_path, temp_dir1)
+            relative_path = os.path.relpath(file_path, folder_path1)
             if relative_path.endswith(".db"):
                 # Se for um arquivo .db, aplicar a regra de merge de bancos de dados
                 latest_files[relative_path] = ("db", file_path)
@@ -167,16 +156,17 @@ def merge_zip_files(zip1_path: str, zip2_path: str, output_zip: str):
                 file_mtime = os.path.getmtime(file_path)
                 latest_files[relative_path] = (file_path, file_mtime)
 
-    for dirpath, _, filenames in os.walk(temp_dir2):
+    # Comparar os arquivos da segunda pasta
+    for dirpath, _, filenames in os.walk(folder_path2):
         for file in filenames:
             file_path = os.path.join(dirpath, file)
-            relative_path = os.path.relpath(file_path, temp_dir2)
+            relative_path = os.path.relpath(file_path, folder_path2)
             if relative_path.endswith(".db"):
                 if relative_path in latest_files:
                     db1_path = latest_files[relative_path][1]
                     db2_path = file_path
-                    output_db = f"merged_{relative_path}"
-                    merge_databases(db1_path, db2_path, output_db)
+                    output_db = os.path.join(merged_folder_path, f"merged_{relative_path}")
+                    merge_databases(db1_path, db2_path, output_db)  # Descomente esta linha para mesclar os bancos de dados
                     latest_files[relative_path] = (output_db, None)
                 else:
                     latest_files[relative_path] = ("db", file_path)
@@ -185,27 +175,89 @@ def merge_zip_files(zip1_path: str, zip2_path: str, output_zip: str):
                 if (relative_path not in latest_files) or (file_mtime > latest_files[relative_path][1]):
                     latest_files[relative_path] = (file_path, file_mtime)
 
-    # Criar um novo arquivo ZIP com os arquivos mesclados
-    with zipfile.ZipFile(output_zip, 'w') as merged_zip:
-        for relative_path, (file_path, _) in latest_files.items():
-            merged_zip.write(file_path, relative_path)
+    # Copiar os arquivos mesclados para a nova pasta
+    for relative_path, (file_path, _) in latest_files.items():
+        if file_path and os.path.isfile(file_path):  # Verifica se o caminho do arquivo é válido
+            destination_path = os.path.join(merged_folder_path, relative_path)
+            destination_dir = os.path.dirname(destination_path)
+            # Criar o diretório de destino se não existir
+            os.makedirs(destination_dir, exist_ok=True)
+            shutil.copy2(file_path, destination_path)
 
-    # Limpar diretórios temporários
-    shutil.rmtree(temp_dir1)
-    shutil.rmtree(temp_dir2)
+    # Deletar a primeira pasta
+    shutil.rmtree(folder_path1)
+
+    #  Deletar a segunda pasta
+    shutil.rmtree(folder_path2)
+
+    # Renomear a nova pasta mesclada para o nome da pasta deletada
+    new_folder_name = os.path.basename(folder_path1)  # Obtém o nome da pasta original
+    new_merged_folder_path = os.path.join(os.path.dirname(merged_folder_path), new_folder_name)
+    os.rename(merged_folder_path, new_merged_folder_path)
+
+
+    return new_merged_folder_path  # Retorna o caminho da nova pasta mesclada renomeada
 
 
 # Modelo para receber os caminhos dos arquivos via JSON
-class ZipPaths(BaseModel):
-    zip1_path: str
-    zip2_path: str
+class SystemPaths(BaseModel):
+    system1_path: str
+
+@app.post("/merge-local-systems")
+async def merge_local_systems(paths: SystemPaths):
+    merge_folders(paths.system1_path)
+    return {"message": "Merge completed"}
+
+@app.post("/upload-folder/")
+async def upload_folder(file: UploadFile = File(...)):
+    # Diretório onde o arquivo zip será salvo
+    upload_dir = "systems/luciane"
+    os.makedirs(upload_dir, exist_ok=True)
+
+    # Caminho completo para salvar o arquivo zip
+    zip_path = os.path.join(upload_dir, file.filename)
+
+    # Salvar o arquivo zip no servidor
+    with open(zip_path, "wb") as buffer:
+        content = await file.read()
+        buffer.write(content)
+
+    # Diretório onde o conteúdo será extraído
+    extraction_dir = os.path.join(upload_dir, file.filename[:-4])  # Remove '.zip' para criar o nome da pasta
+    os.makedirs(extraction_dir, exist_ok=True)
+
+    # Extraindo o conteúdo do arquivo zip
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        zip_ref.extractall(extraction_dir)
+
+    # Excluir o arquivo zip após a extração
+    os.remove(zip_path)
+
+    return {
+        "filename": file.filename,
+        "zip_path": zip_path,
+        "extracted_folder": extraction_dir,
+    }
+
+def zip_folder(folder_path: str) -> str:
+    zip_file_path = f"{folder_path}.zip"
+    with zipfile.ZipFile(zip_file_path, 'w', zipfile.ZIP_DEFLATED) as zip_file:
+        for root, _, files in os.walk(folder_path):
+            for file in files:
+                file_path = os.path.join(root, file)
+                arcname = os.path.relpath(file_path, folder_path)
+                zip_file.write(file_path, arcname)
+    return zip_file_path
 
 
-@app.post("/merge-local-zips")
-async def merge_local_zips(paths: ZipPaths):
-    output_zip = "merged_output.zip"
-    merge_zip_files(paths.zip1_path, paths.zip2_path, output_zip)
-    return {"message": "Merge completed", "output_zip": output_zip}
+@app.get("/download-main-zip/")
+async def download_zip():
+    if not os.path.isdir("systems/luciane/main"):
+        raise HTTPException(status_code=404, detail="Directory not found")
+
+    zip_file_path = zip_folder("systems/luciane/main")
+
+    return FileResponse(zip_file_path, media_type='application/zip', filename=os.path.basename(zip_file_path))
 
 
 @app.get("/")

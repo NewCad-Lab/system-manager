@@ -1,0 +1,125 @@
+{
+  "id": "lin_pla_dor_mal_nic_063",
+  "entities": {
+    "root": {
+      "entityId": "root",
+      "permissions": 0,
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "sizing": [
+        200,
+        0,
+        200
+      ],
+      "entities": {
+        "floor.principal": {
+          "entityId": "floor.principal",
+          "permissions": 0,
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "sizing": [
+            40,
+            0,
+            40
+          ],
+          "entities": {
+            "a03a8cb3-c7c9-4cf8-b027-4cd536c4311e": {
+              "entityId": "a03a8cb3-c7c9-4cf8-b027-4cd536c4311e",
+              "moduleId": "lin_pla_dor_mal_nic_063",
+              "objFile": "41a00c2d-7e40-4545-bd3e-cb38797264e6",
+              "permissions": 3,
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "position": [
+                0,
+                1.015,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "sizing": [
+                14.5,
+                2.03,
+                2.7
+              ],
+              "entities": {
+                "71c1318d-e3f5-429f-b6ae-341e3448e564": {
+                  "entityId": "71c1318d-e3f5-429f-b6ae-341e3448e564",
+                  "moduleId": "lin_pla_mod_ocu_dorm_nic_145_1_2",
+                  "aggregateId": "Ag3074874",
+                  "objFile": "f58338de-693d-498a-9a3f-315e711129da",
+                  "permissions": 3,
+                  "layers": [
+                    {
+                      "layerName": "CORPO_H_mesh_",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    },
+                    {
+                      "layerName": "CORPO_V_mesh_",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    14.5,
+                    2.03,
+                    2.7
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

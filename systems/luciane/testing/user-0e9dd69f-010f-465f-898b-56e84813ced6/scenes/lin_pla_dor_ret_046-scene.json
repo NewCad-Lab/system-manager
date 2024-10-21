@@ -1,0 +1,287 @@
+{
+  "id": "lin_pla_dor_ret_046",
+  "entities": {
+    "root": {
+      "entityId": "root",
+      "permissions": 0,
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "sizing": [
+        200,
+        0,
+        200
+      ],
+      "entities": {
+        "floor.principal": {
+          "entityId": "floor.principal",
+          "permissions": 0,
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "sizing": [
+            40,
+            0,
+            40
+          ],
+          "entities": {
+            "07383676-271b-49cc-a31f-2aac6aea3cee": {
+              "entityId": "07383676-271b-49cc-a31f-2aac6aea3cee",
+              "moduleId": "lin_pla_dor_ret_046",
+              "objFile": "b976d457-47ea-4519-b884-79fe735de187",
+              "permissions": 3,
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "position": [
+                0,
+                11.8,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "sizing": [
+                2.53,
+                23.6,
+                5.45
+              ],
+              "entities": {
+                "886d477e-ed85-4306-b4ed-5fc345f4734c": {
+                  "entityId": "886d477e-ed85-4306-b4ed-5fc345f4734c",
+                  "moduleId": "lin_pla_coz_fre_dor_inf_fre_ret",
+                  "aggregateId": "Porta",
+                  "objFile": "3950b6f4-f615-49eb-8508-95dc230ae29e",
+                  "permissions": 3,
+                  "layers": [],
+                  "position": [
+                    0,
+                    0.33999999999999986,
+                    2.81
+                  ],
+                  "sizing": [
+                    2.46,
+                    22.78,
+                    0.15
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {
+                    "1f4ec9d0-7709-4f3c-93c2-bb668586aace": {
+                      "entityId": "1f4ec9d0-7709-4f3c-93c2-bb668586aace",
+                      "moduleId": "lin_pla_coz_fre_dor_mod_for_gir_gol",
+                      "aggregateId": "ed13206c-361c-4b9a-af04-f0617bc319bb",
+                      "objFile": "40f80982-a16e-494b-8be6-8d5a05b7634e",
+                      "permissions": 3,
+                      "layers": [],
+                      "position": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sizing": [
+                        2.46,
+                        22.78,
+                        0.15
+                      ],
+                      "normal": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "entities": {
+                        "b7759ffc-0f62-497e-bfd8-46a5f5a02f32": {
+                          "entityId": "b7759ffc-0f62-497e-bfd8-46a5f5a02f32",
+                          "moduleId": "lin_pla_coz_fre_dor_mod_for_ocu_fro_2",
+                          "aggregateId": "Ag17124610",
+                          "objFile": "c90d67bc-241d-486b-897d-267b5d54ed64",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "FRENTE_V_mesh_",
+                              "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                              "materialId": "default"
+                            }
+                          ],
+                          "position": [
+                            -0.125,
+                            0,
+                            0
+                          ],
+                          "sizing": [
+                            2.21,
+                            22.78,
+                            0.15
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        },
+                        "43d1a3b5-d165-45f8-9b6b-5f8496af8fb2": {
+                          "entityId": "43d1a3b5-d165-45f8-9b6b-5f8496af8fb2",
+                          "moduleId": "lin_pla_coz_ace_pux_ino_2_2",
+                          "aggregateId": "e23b8f38-6165-4b9c-b72d-484d7eceb606",
+                          "objFile": "7d87c8cf-e890-4ae3-ac42-e3c432671eee",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "PUXADOR_mesh_",
+                              "materialConfig": "{\"type\":\"standard\",\"metalness\":100,\"transmission\":30,\"thickness\":0,\"roughness\":30}",
+                              "textureConfig": "{\"repeatSet\":[1,1]}",
+                              "materialId": "Fab_Met_ino",
+                              "textureId": "Fab_Met_ino"
+                            }
+                          ],
+                          "position": [
+                            1.065,
+                            0,
+                            0.015
+                          ],
+                          "sizing": [
+                            0.25,
+                            22.78,
+                            0.18
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "c7ebdfc9-3d75-402f-baa2-446b47a8e52c": {
+                  "entityId": "c7ebdfc9-3d75-402f-baa2-446b47a8e52c",
+                  "moduleId": "lin_pla_mod_ocu_dorm_ret_253_1",
+                  "aggregateId": "039bfb29-ce0f-4a2f-ac05-fa8bdd61ea31",
+                  "objFile": "de535d2f-f6d2-485e-9020-b88a5313d499",
+                  "permissions": 3,
+                  "layers": [],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    2.53,
+                    23.6,
+                    5.45
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {
+                    "412feb67-6578-44d0-a461-d7c36d599eff": {
+                      "entityId": "412feb67-6578-44d0-a461-d7c36d599eff",
+                      "moduleId": "lin_pla_mod_ocu_dorm_des_ret_2360",
+                      "aggregateId": "Ag12521345",
+                      "objFile": "eb53e1b7-3a97-4615-8156-9453439bf92d",
+                      "permissions": 3,
+                      "layers": [
+                        {
+                          "layerName": "CORPO_H_mesh_",
+                          "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                          "materialId": "default"
+                        },
+                        {
+                          "layerName": "CORPO_V_mesh_",
+                          "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                          "materialId": "default"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sizing": [
+                        2.53,
+                        23.6,
+                        5.45
+                      ],
+                      "normal": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "entities": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

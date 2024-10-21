@@ -1,0 +1,98 @@
+{
+  "id": "4e1f0551-6340-44b9-bbd7-415c6da164c0",
+  "moduleLayers": {
+    "floor": {
+      "moduleLayerId": "floor",
+      "layerDescription": "Piso",
+      "hidden": false,
+      "countModules": 1
+    },
+    "wall": {
+      "moduleLayerId": "wall",
+      "layerDescription": "Paredes",
+      "hidden": false,
+      "countModules": 2
+    }
+  },
+  "entities": {
+    "root": {
+      "entityId": "root",
+      "permissions": 0,
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "sizing": [
+        200,
+        0,
+        200
+      ],
+      "entities": {
+        "floor.principal": {
+          "entityId": "floor.principal",
+          "permissions": 0,
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "sizing": [
+            40,
+            0,
+            40
+          ],
+          "entities": {
+            "8bc12c25-f05c-47bb-8495-a8e449494fb0": {
+              "entityId": "8bc12c25-f05c-47bb-8495-a8e449494fb0",
+              "moduleId": "4e1f0551-6340-44b9-bbd7-415c6da164c0",
+              "objFile": "81801fe2-c409-4839-a3e5-189571cbe6e9",
+              "permissions": 3,
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "sizing": [
+                0,
+                0,
+                0
+              ],
+              "entities": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}
