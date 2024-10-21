@@ -9,7 +9,6 @@ __pycache__/
 *.pyd
 
 # SQLite database files
-*.db
 *.sqlite
 *.sqlite3
 
@@ -33,7 +32,7 @@ logs/
 # Backup and archive files
 *.bak
 *.tar
-*.zip
+
 
 # Ignore temporary and build files
 *.tmp
