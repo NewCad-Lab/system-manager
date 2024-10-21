@@ -239,25 +239,38 @@ async def upload_folder(file: UploadFile = File(...)):
         "extracted_folder": extraction_dir,
     }
 
-def zip_folder(folder_path: str) -> str:
+
+def zip_folder(folder_path):
     zip_file_path = f"{folder_path}.zip"
+
+    # Cria o arquivo ZIP
     with zipfile.ZipFile(zip_file_path, 'w', zipfile.ZIP_DEFLATED) as zip_file:
         for root, _, files in os.walk(folder_path):
             for file in files:
                 file_path = os.path.join(root, file)
-                arcname = os.path.relpath(file_path, folder_path)
-                zip_file.write(file_path, arcname)
+                zip_file.write(file_path, os.path.relpath(file_path, folder_path))
+
     return zip_file_path
 
 
 @app.get("/download-main-zip/")
 async def download_zip():
-    if not os.path.isdir("systems/luciane/main"):
+    folder_path = "systems/luciane/main"
+
+    if not os.path.isdir(folder_path):
         raise HTTPException(status_code=404, detail="Directory not found")
 
-    zip_file_path = zip_folder("systems/luciane/main")
+    zip_file_path = zip_folder(folder_path)
 
     return FileResponse(zip_file_path, media_type='application/zip', filename=os.path.basename(zip_file_path))
+
+
+# Se desejar, pode adicionar uma rota para deletar o arquivo ZIP após o download
+@app.on_event("shutdown")
+def remove_zip_file():
+    zip_file_path = "systems/luciane/main.zip"  # Ajuste para o caminho correto do arquivo ZIP
+    if os.path.exists(zip_file_path):
+        os.remove(zip_file_path)
 
 
 @app.get("/")
