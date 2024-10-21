@@ -1,0 +1,41 @@
+# Ignore virtual environments
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# SQLite database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Compiled files
+*.so
+*.o
+*.a
+*.pyc
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# FastAPI related logs
+logs/
+*.log
+
+# Ignore environment variables
+.env
+
+# Backup and archive files
+*.bak
+*.tar
+*.zip
+
+# Ignore temporary and build files
+*.tmp
+*.swp
+*.swo
