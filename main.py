@@ -208,7 +208,7 @@ async def merge_local_systems(paths: SystemPaths):
     merge_folders(paths.system1_path)
     return {"message": "Merge completed"}
 
-@app.post("/upload-folder/")
+@app.post("/upload-folder")
 async def upload_folder(file: UploadFile = File(...)):
     # Diretório onde o arquivo zip será salvo
     upload_dir = "systems/luciane"
@@ -253,7 +253,7 @@ def zip_folder(folder_path):
     return zip_file_path
 
 
-@app.get("/download-main-zip/")
+@app.get("/download-main-zip")
 async def download_zip():
     folder_path = "systems/luciane/main"
 
