@@ -3,7 +3,7 @@ import os
 import shutil
 import sqlite3
 import uvicorn
-from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi import FastAPI, UploadFile, File, HTTPException, Query
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from datetime import datetime
@@ -130,6 +130,11 @@ def merge_databases(db1_path: str, db2_path: str, output_db: str):
             placeholders = ", ".join(["?" for _ in columns])
             cursor_output.executemany(f'INSERT INTO "{table_name}" VALUES ({placeholders})', rows)
 
+    cursor2.execute("SELECT name, sql FROM sqlite_master WHERE type='trigger';")
+    triggers = cursor2.fetchall()
+    for trigger_name, trigger_sql in triggers:
+        cursor_output.execute(trigger_sql)
+
     # Commitar e fechar as conexões
     conn_output.commit()
     conn1.close()
@@ -188,13 +193,19 @@ def merge_folders(folder_path2: str,  folder_path1 = 'systems/luciane/main', mer
     shutil.rmtree(folder_path1)
 
     #  Deletar a segunda pasta
-    #shutil.rmtree(folder_path2)
+    shutil.rmtree(folder_path2)
 
     # Renomear a nova pasta mesclada para o nome da pasta deletada
     new_folder_name = os.path.basename(folder_path1)  # Obtém o nome da pasta original
     new_merged_folder_path = os.path.join(os.path.dirname(merged_folder_path), new_folder_name)
     os.rename(merged_folder_path, new_merged_folder_path)
 
+    file_to_delete = os.path.join(folder_path1, 'merged_database.db')
+    if os.path.exists(file_to_delete):
+        os.remove(file_to_delete)
+        print(f"Arquivo {file_to_delete} deletado.")
+    else:
+        print(f"Arquivo {file_to_delete} não encontrado.")
 
     return new_merged_folder_path  # Retorna o caminho da nova pasta mesclada renomeada
 
@@ -240,6 +251,50 @@ async def upload_folder(file: UploadFile = File(...)):
     }
 
 
+@app.post("/replace-main-folder")
+async def replace_main_folder(file: UploadFile = File(...)):
+    # Diretório onde o arquivo zip será salvo
+    upload_dir = "systems/luciane"
+    main_folder = os.path.join(upload_dir, "main")
+
+    os.makedirs(upload_dir, exist_ok=True)
+
+    # Caminho completo para salvar o arquivo zip
+    zip_path = os.path.join(upload_dir, file.filename)
+
+    if os.path.exists(zip_path) and os.path.isfile(zip_path):
+        os.remove(zip_path)
+
+    # Salvar o arquivo zip no servidor
+    with open(zip_path, "wb") as buffer:
+        content = await file.read()
+        buffer.write(content)
+
+    # Verifica se a pasta 'main' existe e a exclui
+    if os.path.exists(main_folder) and os.path.isdir(main_folder):
+        shutil.rmtree(main_folder)
+
+    # Diretório onde o conteúdo será extraído
+    extraction_dir = os.path.join(upload_dir, file.filename[:-4])  # Remove '.zip' para criar o nome da pasta
+    os.makedirs(extraction_dir, exist_ok=True)
+
+
+
+    # Extraindo o conteúdo do arquivo zip
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        zip_ref.extractall(extraction_dir)
+
+    # Excluir o arquivo zip após a extração
+    os.remove(zip_path)
+
+    return {
+        "filename": file.filename,
+        "zip_path": zip_path,
+        "extracted_folder": extraction_dir,
+    }
+
+
+
 def zip_folder(folder_path):
     zip_file_path = f"{folder_path}.zip"
 
@@ -272,6 +327,21 @@ def remove_zip_file():
     if os.path.exists(zip_file_path):
         os.remove(zip_file_path)
 
+
+@app.get("/file-last-modified")
+async def file_last_modified(file_path: str = Query(...)):
+    # Verifica se o arquivo existe
+    if not os.path.isfile(file_path):
+        raise HTTPException(status_code=404, detail="File not found")
+
+    # Obtém a última data de modificação do arquivo
+    last_modified_timestamp = os.path.getmtime(file_path)
+    last_modified_date = datetime.fromtimestamp(last_modified_timestamp)
+
+    # Converte a data para string para que seja serializável pelo JSON
+    last_modified_date_str = last_modified_date.isoformat()
+
+    return {"file_path": file_path, "last_modified": last_modified_date_str}
 
 @app.get("/")
 async def root():

@@ -1,0 +1,91 @@
+{
+  "id": "322cf24e-bda6-4360-9268-f89ab842b0ba",
+  "entities": {
+    "root": {
+      "entityId": "root",
+      "permissions": 0,
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "sizing": [
+        200,
+        0,
+        200
+      ],
+      "entities": {
+        "floor.principal": {
+          "entityId": "floor.principal",
+          "permissions": 0,
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "sizing": [
+            40,
+            0,
+            40
+          ],
+          "entities": {
+            "1bb9806b-b8f0-4ded-9b2d-8e850059a174": {
+              "entityId": "1bb9806b-b8f0-4ded-9b2d-8e850059a174",
+              "moduleId": "322cf24e-bda6-4360-9268-f89ab842b0ba",
+              "objFile": "0601d2d5-fde5-4781-a805-8890220faa55",
+              "permissions": 3,
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "position": [
+                0,
+                2.5,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "sizing": [
+                5,
+                5,
+                5
+              ],
+              "entities": {},
+              "layers": [
+                {
+                  "layerName": "Cube",
+                  "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                  "materialId": "default"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

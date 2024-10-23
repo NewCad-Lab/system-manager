@@ -1,0 +1,123 @@
+{
+  "id": "215cfc77-d39f-40c3-a454-c9a767ad2c25",
+  "entities": {
+    "root": {
+      "entityId": "root",
+      "permissions": 0,
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "sizing": [
+        200,
+        0,
+        200
+      ],
+      "entities": {
+        "floor.principal": {
+          "entityId": "floor.principal",
+          "permissions": 0,
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "sizing": [
+            40,
+            0,
+            40
+          ],
+          "entities": {
+            "75cc85d0-5cd1-4180-86c3-23ca6cdcab92": {
+              "entityId": "75cc85d0-5cd1-4180-86c3-23ca6cdcab92",
+              "moduleId": "215cfc77-d39f-40c3-a454-c9a767ad2c25",
+              "objFile": "a9201fb6-12e6-49e3-88fd-9a006d5375ba",
+              "permissions": 3,
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "position": [
+                0,
+                2.5,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "sizing": [
+                5,
+                5,
+                5
+              ],
+              "entities": {
+                "d40f84a3-9b4c-4bcd-a83e-eded32cce65d": {
+                  "entityId": "d40f84a3-9b4c-4bcd-a83e-eded32cce65d",
+                  "moduleId": "322cf24e-bda6-4360-9268-f89ab842b0ba",
+                  "aggregateId": "12f9846f-af47-437e-8c6a-597ad7a5c00c",
+                  "modelEntity": true,
+                  "modelAggregateFolderId": "d452a9bf-4dab-4bca-8bbc-43999729d797",
+                  "objFile": "0601d2d5-fde5-4781-a805-8890220faa55",
+                  "permissions": 1,
+                  "layers": [
+                    {
+                      "layerName": "Cube",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    5,
+                    5,
+                    5
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {},
+                  "sceneId": "215cfc77-d39f-40c3-a454-c9a767ad2c25"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
