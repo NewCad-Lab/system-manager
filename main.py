@@ -46,7 +46,6 @@ def merge_databases(db1_path: str, db2_path: str, output_db: str):
             if deleted_at_converted and (deleted_records[(row_id, table_name)] is None or deleted_at_converted > deleted_records[(row_id, table_name)]):
                 deleted_records[(row_id, table_name)] = deleted_at_converted
 
-
     # Obter as tabelas do primeiro banco de dados
     cursor1.execute("SELECT name FROM sqlite_master WHERE type='table';")
     tables = cursor1.fetchall()
@@ -130,6 +129,13 @@ def merge_databases(db1_path: str, db2_path: str, output_db: str):
             placeholders = ", ".join(["?" for _ in columns])
             cursor_output.executemany(f'INSERT INTO "{table_name}" VALUES ({placeholders})', rows)
 
+        # Recriar as foreign keys da tabela (se existirem)
+        cursor2.execute(f'PRAGMA foreign_key_list("{table_name}");')
+        foreign_keys = cursor2.fetchall()
+        for fk in foreign_keys:
+            fk_sql = f'ALTER TABLE "{table_name}" ADD CONSTRAINT fk_{fk[3]} FOREIGN KEY({fk[3]}) REFERENCES {fk[2]}({fk[4]})'
+            cursor_output.execute(fk_sql)
+
     cursor2.execute("SELECT name, sql FROM sqlite_master WHERE type='trigger';")
     triggers = cursor2.fetchall()
     for trigger_name, trigger_sql in triggers:
@@ -140,7 +146,6 @@ def merge_databases(db1_path: str, db2_path: str, output_db: str):
     conn1.close()
     conn2.close()
     conn_output.close()
-
 
 def merge_folders(folder_path2: str,  folder_path1 = 'systems/luciane/main', merged_folder_path = 'systems/luciane/temp-folder'):
     # Criar a nova pasta para os arquivos mesclados
