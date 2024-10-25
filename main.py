@@ -27,6 +27,26 @@ def merge_databases(db1_path: str, db2_path: str, output_db: str):
     conn_output = sqlite3.connect(output_db)
     cursor_output = conn_output.cursor()
 
+    # Replicar a estrutura de tabelas de db2 para db3 sem registros
+    cursor2.execute("SELECT name, sql FROM sqlite_master WHERE type='table';")
+    tables = cursor2.fetchall()
+    for table_name, create_sql in tables:
+        cursor_output.execute(create_sql)  # Cria a tabela na db3 vazia
+
+    # Replicar índices de db2 para db3
+    cursor2.execute("SELECT name, sql FROM sqlite_master WHERE type='index';")
+    indices = cursor2.fetchall()
+    for index_name, index_sql in indices:
+        if index_sql:  # Verificar se index_sql não é None
+            cursor_output.execute(index_sql)  # Cria o índice na db3
+
+    # Replicar triggers de db2 para db3
+    cursor2.execute("SELECT name, sql FROM sqlite_master WHERE type='trigger';")
+    triggers = cursor2.fetchall()
+    for trigger_name, trigger_sql in triggers:
+        if trigger_sql:  # Verificar se trigger_sql não é None
+            cursor_output.execute(trigger_sql)
+
     # Obter os registros deletados de ambas as bases de dados
     cursor1.execute("SELECT id, tableName, deletedAt FROM deleted_records_logs")
     deleted_logs_db1 = cursor1.fetchall()
@@ -45,6 +65,7 @@ def merge_databases(db1_path: str, db2_path: str, output_db: str):
             # Comparar qual deletedAt é mais recente e manter o mais recente
             if deleted_at_converted and (deleted_records[(row_id, table_name)] is None or deleted_at_converted > deleted_records[(row_id, table_name)]):
                 deleted_records[(row_id, table_name)] = deleted_at_converted
+
 
     # Obter as tabelas do primeiro banco de dados
     cursor1.execute("SELECT name FROM sqlite_master WHERE type='table';")
@@ -114,7 +135,7 @@ def merge_databases(db1_path: str, db2_path: str, output_db: str):
                 columns = cursor1.fetchall()
                 columns_def = ", ".join([f'{col[1]} {col[2]}' for col in columns])
 
-                cursor_output.execute(f'CREATE TABLE "{table_name}" ({columns_def});')
+                cursor_output.execute(f'CREATE TABLE IF NOT EXISTS "{table_name}" ({columns_def});')
                 placeholders = ", ".join(["?" for _ in columns])
                 cursor_output.executemany(f'INSERT INTO "{table_name}" VALUES ({placeholders})', rows)
         else:
@@ -129,17 +150,6 @@ def merge_databases(db1_path: str, db2_path: str, output_db: str):
             placeholders = ", ".join(["?" for _ in columns])
             cursor_output.executemany(f'INSERT INTO "{table_name}" VALUES ({placeholders})', rows)
 
-        # Recriar as foreign keys da tabela (se existirem)
-        cursor2.execute(f'PRAGMA foreign_key_list("{table_name}");')
-        foreign_keys = cursor2.fetchall()
-        for fk in foreign_keys:
-            fk_sql = f'ALTER TABLE "{table_name}" ADD CONSTRAINT fk_{fk[3]} FOREIGN KEY({fk[3]}) REFERENCES {fk[2]}({fk[4]})'
-            cursor_output.execute(fk_sql)
-
-    cursor2.execute("SELECT name, sql FROM sqlite_master WHERE type='trigger';")
-    triggers = cursor2.fetchall()
-    for trigger_name, trigger_sql in triggers:
-        cursor_output.execute(trigger_sql)
 
     # Commitar e fechar as conexões
     conn_output.commit()
