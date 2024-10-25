@@ -358,6 +358,7 @@ async def file_last_modified(file_path: str = Query(...)):
 
     return {"file_path": file_path, "last_modified": last_modified_date_str}
 
+@app.head('/')
 @app.get("/")
 async def root():
     return {"message": "API para merge de System"}
