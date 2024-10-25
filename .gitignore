@@ -4,7 +4,6 @@ env/
 
 # Python cache files
 __pycache__/
-main/
 *.py[cod]
 *.pyo
 *.pyd

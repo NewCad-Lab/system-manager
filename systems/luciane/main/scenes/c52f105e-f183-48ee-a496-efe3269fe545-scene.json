@@ -1,0 +1,156 @@
+{
+  "id": "c52f105e-f183-48ee-a496-efe3269fe545",
+  "moduleLayers": {
+    "floor": {
+      "moduleLayerId": "floor",
+      "layerDescription": "Piso",
+      "hidden": false,
+      "countModules": 1
+    },
+    "wall": {
+      "moduleLayerId": "wall",
+      "layerDescription": "Paredes",
+      "hidden": false,
+      "countModules": 2
+    },
+    "d34eb0cf-2700-4a74-981e-3dbc27fe1238": {
+      "moduleLayerId": "d34eb0cf-2700-4a74-981e-3dbc27fe1238",
+      "layerDescription": "teste",
+      "hidden": false,
+      "countModules": 1
+    }
+  },
+  "entities": {
+    "root": {
+      "entityId": "root",
+      "permissions": 0,
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "sizing": [
+        200,
+        0,
+        200
+      ],
+      "entities": {
+        "floor.principal": {
+          "entityId": "floor.principal",
+          "permissions": 0,
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "sizing": [
+            40,
+            0,
+            40
+          ],
+          "entities": {
+            "2982948a-0837-4e7c-9ed1-a7adb5b465ec": {
+              "entityId": "2982948a-0837-4e7c-9ed1-a7adb5b465ec",
+              "moduleId": "c52f105e-f183-48ee-a496-efe3269fe545",
+              "objFile": "1f91b100-08a1-4b49-a6d1-3dabd9276ef9",
+              "permissions": 3,
+              "moduleLayerId": "d34eb0cf-2700-4a74-981e-3dbc27fe1238",
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "position": [
+                0,
+                3.025,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "sizing": [
+                4.05,
+                6.05,
+                4.35
+              ],
+              "entities": {
+                "b0f7cadf-e96f-440d-8097-876072101cc2": {
+                  "entityId": "b0f7cadf-e96f-440d-8097-876072101cc2",
+                  "moduleId": "box",
+                  "aggregateId": "5312d036-4ace-4010-a105-cb6826c37fb5",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "d60617cf-072f-4acd-b569-43352ce44002",
+                  "objFile": "box",
+                  "permissions": 3,
+                  "moduleLayerId": "d34eb0cf-2700-4a74-981e-3dbc27fe1238",
+                  "layers": [
+                    {
+                      "layerName": "cube",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {}
+                }
+              },
+              "layers": [
+                {
+                  "layerName": "CORPO_H_mesh_",
+                  "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                  "materialId": "default"
+                },
+                {
+                  "layerName": "CORPO_V_mesh_",
+                  "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                  "materialId": "default"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
