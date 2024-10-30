@@ -107,56 +107,15 @@
                   -1
                 ],
                 [
-                  -30.827739154470407,
+                  -29.5,
                   -1
                 ],
                 [
-                  -28.172260845529593,
+                  -29.5,
                   1
                 ]
               ],
-              "entities": {
-                "238b6176-fde0-4f0b-bd8f-a9149f1bced6": {
-                  "entityId": "238b6176-fde0-4f0b-bd8f-a9149f1bced6",
-                  "moduleId": "1386d414-a7c0-477a-9430-429c72b97d3a",
-                  "objFile": "0aca1c9c-6893-4538-a852-04011e82d1b7",
-                  "permissions": 3,
-                  "normal": [
-                    -1,
-                    0,
-                    0
-                  ],
-                  "position": [
-                    -2.392008972167968,
-                    -2.2190703691708222,
-                    -7.0151942982123785
-                  ],
-                  "rotation": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "sizing": [
-                    2.784017944335938,
-                    0.915,
-                    4.5
-                  ],
-                  "entities": {},
-                  "layers": [
-                    {
-                      "layerName": "CORPO_H_mesh_",
-                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
-                      "materialId": "default"
-                    },
-                    {
-                      "layerName": "CORPO_V_mesh_",
-                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
-                      "materialId": "default"
-                    }
-                  ],
-                  "parentId": "floor.principal"
-                }
-              }
+              "entities": {}
             },
             "wall.2": {
               "entityId": "wall.2",
@@ -202,197 +161,11 @@
                 ]
               ],
               "entities": {}
-            },
-            "8af0db31-eb83-461b-9587-591e47f98370": {
-              "entityId": "8af0db31-eb83-461b-9587-591e47f98370",
-              "moduleId": "5d4c5ba9-54fb-4e9b-980f-c4da2482a263",
-              "objFile": "242273bd-d4bf-4d43-9029-eade5a80f453",
-              "permissions": 3,
-              "normal": [
-                0,
-                1,
-                0
-              ],
-              "position": [
-                -2.5938922905232857,
-                12.050000000000008,
-                1.496955676492803
-              ],
-              "rotation": [
-                0,
-                0,
-                0
-              ],
-              "sizing": [
-                8.03,
-                23.6,
-                5.45
-              ],
-              "entities": {
-                "afb52041-3d80-45fa-b5f2-f97d9205b704": {
-                  "entityId": "afb52041-3d80-45fa-b5f2-f97d9205b704",
-                  "moduleId": "f2ce0840-b354-43ca-9a46-aaa06bf66d53",
-                  "objFile": "5731468b-af98-4c29-8230-9b9520261922",
-                  "permissions": 3,
-                  "normal": [
-                    -1,
-                    0,
-                    0
-                  ],
-                  "position": [
-                    -11.264999866485596,
-                    2.063425555485491,
-                    0.9054788259964681
-                  ],
-                  "rotation": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "sizing": [
-                    14.5,
-                    2.05,
-                    2.7
-                  ],
-                  "entities": {},
-                  "layers": [
-                    {
-                      "layerName": "CORPO_H_mesh_",
-                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
-                      "materialId": "default"
-                    },
-                    {
-                      "layerName": "CORPO_V_mesh_",
-                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
-                      "materialId": "default"
-                    }
-                  ],
-                  "parentId": "floor.principal"
-                }
-              },
-              "layers": [
-                {
-                  "layerName": "CORPO_H_mesh_",
-                  "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
-                  "materialId": "default"
-                },
-                {
-                  "layerName": "CORPO_V_mesh_",
-                  "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
-                  "materialId": "default"
-                }
-              ]
-            },
-            "wall.e8dca658-5f9d-45a9-b3ff-6fa7e9afd472": {
-              "entityId": "wall.e8dca658-5f9d-45a9-b3ff-6fa7e9afd472",
-              "moduleId": "box",
-              "objFile": "box",
-              "permissions": 1,
-              "moduleLayerId": "wall",
-              "normal": [
-                0,
-                1,
-                0
-              ],
-              "position": [
-                -21.524957231816558,
-                14.25,
-                0.5
-              ],
-              "rotation": [
-                0,
-                3.4213481148905016,
-                0
-              ],
-              "sizing": [
-                2,
-                28,
-                61.38652457738713
-              ],
-              "entities": {},
-              "layers": [
-                {
-                  "layerName": "cube",
-                  "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
-                  "materialId": "default"
-                }
-              ],
-              "shape": [
-                [
-                  -7.147303613713035,
-                  -28.5
-                ],
-                [
-                  -9.80278192265385,
-                  -30.5
-                ],
-                [
-                  7.147303613713035,
-                  28.5
-                ],
-                [
-                  9.802781922653848,
-                  30.5
-                ]
-              ]
-            },
-            "wall.e2a345e3-e84b-4969-b70e-a959201c8907": {
-              "entityId": "wall.e2a345e3-e84b-4969-b70e-a959201c8907",
-              "moduleId": "box",
-              "objFile": "box",
-              "permissions": 1,
-              "moduleLayerId": "wall",
-              "normal": [
-                0,
-                1,
-                0
-              ],
-              "position": [
-                -21.524957231816558,
-                14.25,
-                30
-              ],
-              "rotation": [
-                0,
-                1.5707963267948966,
-                0
-              ],
-              "sizing": [
-                2,
-                28,
-                16.950085536366885
-              ],
-              "entities": {},
-              "layers": [
-                {
-                  "layerName": "cube",
-                  "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
-                  "materialId": "default"
-                }
-              ],
-              "shape": [
-                [
-                  9.802781922653848,
-                  1
-                ],
-                [
-                  7.147303613713035,
-                  -1
-                ],
-                [
-                  -8.475042768183442,
-                  -1
-                ],
-                [
-                  -8.475042768183442,
-                  1
-                ]
-              ]
             }
           }
         },
-        "light.a7af7649-03ca-4491-8395-36f64ebd79fa": {
-          "entityId": "light.a7af7649-03ca-4491-8395-36f64ebd79fa",
+        "light.principal": {
+          "entityId": "light.principal",
           "moduleId": "",
           "permissions": 0,
           "moduleLayerId": "",
@@ -418,10 +191,10 @@
           ],
           "entities": {},
           "lights": {
-            "decay": 1.6,
+            "color": "rgb(255, 255, 255)",
+            "intensity": 1300,
             "distance": 1000,
-            "intensity": 2000,
-            "color": "rgb(244, 246, 174)"
+            "decay": 1.6
           }
         }
       }

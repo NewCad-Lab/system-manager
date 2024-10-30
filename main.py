@@ -14,6 +14,9 @@ app = FastAPI()
 def convert_string_to_datetime(date_string: str) -> float:
     return datetime.strptime(date_string, '%Y-%m-%d %H:%M:%S').timestamp() * 1000
 
+def convert_timestamp_to_string(timestamp_ms: float) -> str:
+    return datetime.fromtimestamp(timestamp_ms / 1000).strftime('%Y-%m-%d %H:%M:%S')
+
 def merge_databases(db1_path: str, db2_path: str, output_db: str):
     # Conectar ao primeiro banco de dados
     conn1 = sqlite3.connect(db1_path)
@@ -65,6 +68,8 @@ def merge_databases(db1_path: str, db2_path: str, output_db: str):
             # Comparar qual deletedAt é mais recente e manter o mais recente
             if deleted_at_converted and (deleted_records[(row_id, table_name)] is None or deleted_at_converted > deleted_records[(row_id, table_name)]):
                 deleted_records[(row_id, table_name)] = deleted_at_converted
+
+
 
 
     # Obter as tabelas do primeiro banco de dados
@@ -149,6 +154,21 @@ def merge_databases(db1_path: str, db2_path: str, output_db: str):
             cursor_output.execute(f'CREATE TABLE "{table_name}" ({columns_def});')
             placeholders = ", ".join(["?" for _ in columns])
             cursor_output.executemany(f'INSERT INTO "{table_name}" VALUES ({placeholders})', rows)
+
+
+    # Inserir os registros combinados de exclusão na tabela deleted_records_logs do banco de saída
+    for (row_id, table_name), deleted_at in deleted_records.items():
+        # Verificar se o registro já existe na tabela de logs de exclusão
+        cursor_output.execute(
+            "SELECT 1 FROM deleted_records_logs WHERE id = ? AND tableName = ?",
+            (row_id, table_name)
+        )
+        if cursor_output.fetchone() is None:
+            # Inserir apenas se o registro ainda não existir
+            cursor_output.execute(
+                "INSERT INTO deleted_records_logs (id, tableName, deletedAt) VALUES (?, ?, ?)",
+                (row_id, table_name, convert_timestamp_to_string(deleted_at))
+            )
 
 
     # Commitar e fechar as conexões
