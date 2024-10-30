@@ -155,20 +155,16 @@ def merge_databases(db1_path: str, db2_path: str, output_db: str):
             placeholders = ", ".join(["?" for _ in columns])
             cursor_output.executemany(f'INSERT INTO "{table_name}" VALUES ({placeholders})', rows)
 
+    # Limpar a tabela de logs de exclusão antes de inserir novos registros
+    cursor_output.execute("DELETE FROM deleted_records_logs")
 
     # Inserir os registros combinados de exclusão na tabela deleted_records_logs do banco de saída
     for (row_id, table_name), deleted_at in deleted_records.items():
-        # Verificar se o registro já existe na tabela de logs de exclusão
+        # Inserir diretamente os registros na tabela de logs de exclusão
         cursor_output.execute(
-            "SELECT 1 FROM deleted_records_logs WHERE id = ? AND tableName = ?",
-            (row_id, table_name)
+            "INSERT INTO deleted_records_logs (id, tableName, deletedAt) VALUES (?, ?, ?)",
+            (row_id, table_name, convert_timestamp_to_string(deleted_at))
         )
-        if cursor_output.fetchone() is None:
-            # Inserir apenas se o registro ainda não existir
-            cursor_output.execute(
-                "INSERT INTO deleted_records_logs (id, tableName, deletedAt) VALUES (?, ?, ?)",
-                (row_id, table_name, convert_timestamp_to_string(deleted_at))
-            )
 
 
     # Commitar e fechar as conexões
