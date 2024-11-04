@@ -1,0 +1,195 @@
+{
+  "id": "3097754a-975a-4576-9360-1549f346d449",
+  "moduleLayers": {
+    "floor": {
+      "moduleLayerId": "floor",
+      "layerDescription": "Piso",
+      "hidden": false,
+      "countModules": 1
+    },
+    "wall": {
+      "moduleLayerId": "wall",
+      "layerDescription": "Paredes",
+      "hidden": false,
+      "countModules": 2
+    },
+    "d320d6e7-dc45-431e-b3d3-b346bd5b4440": {
+      "moduleLayerId": "d320d6e7-dc45-431e-b3d3-b346bd5b4440",
+      "layerDescription": "module",
+      "hidden": false,
+      "countModules": 1
+    }
+  },
+  "entities": {
+    "root": {
+      "entityId": "root",
+      "permissions": 0,
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "sizing": [
+        200,
+        0,
+        200
+      ],
+      "entities": {
+        "floor.principal": {
+          "entityId": "floor.principal",
+          "permissions": 0,
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "sizing": [
+            40,
+            0,
+            40
+          ],
+          "entities": {
+            "b39fdd0c-7347-48dc-8a3e-808954460e4d": {
+              "entityId": "b39fdd0c-7347-48dc-8a3e-808954460e4d",
+              "moduleId": "3097754a-975a-4576-9360-1549f346d449",
+              "objFile": "f3a901f2-c7e8-49b9-994b-3e01bc144734",
+              "permissions": 3,
+              "moduleLayerId": "d320d6e7-dc45-431e-b3d3-b346bd5b4440",
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "position": [
+                0,
+                3.025,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "sizing": [
+                4.05,
+                6.05,
+                4.35
+              ],
+              "entities": {
+                "21f97e89-5c9f-466f-b2fc-884a7ebe3ce5": {
+                  "entityId": "21f97e89-5c9f-466f-b2fc-884a7ebe3ce5",
+                  "moduleId": "be30c976-600b-417d-9b23-59d2220f0ef5",
+                  "aggregateId": "b4f765de-149a-4ebb-ac7e-c11279ca81d7",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "3097754a-975a-4576-9360-1549f346d449",
+                  "objFile": "e16e1378-2d06-45b0-81cf-1e2c2581ea53",
+                  "permissions": 3,
+                  "moduleLayerId": "d320d6e7-dc45-431e-b3d3-b346bd5b4440",
+                  "layers": [
+                    {
+                      "layerName": "FRENTE_V_mesh_",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    5,
+                    5,
+                    5
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {
+                    "4a0b3057-f6f3-4086-980a-ff8059c52b28": {
+                      "entityId": "4a0b3057-f6f3-4086-980a-ff8059c52b28",
+                      "moduleId": "c1af581d-cdaf-4000-b52d-c73ee2b681c0",
+                      "aggregateId": "8941ab62-d02c-4128-93b2-17b8a987efc5",
+                      "modelEntity": false,
+                      "modelAggregateFolderId": "be30c976-600b-417d-9b23-59d2220f0ef5",
+                      "objFile": "fac4b2c2-fb46-49a1-83a7-5db32a6d2806",
+                      "permissions": 3,
+                      "moduleLayerId": "d320d6e7-dc45-431e-b3d3-b346bd5b4440",
+                      "layers": [
+                        {
+                          "layerName": "FRENTE_V_mesh_",
+                          "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                          "materialId": "default"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        2.5
+                      ],
+                      "sizing": [
+                        2,
+                        2,
+                        2
+                      ],
+                      "normal": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "entities": {}
+                    }
+                  }
+                }
+              },
+              "layers": [
+                {
+                  "layerName": "CORPO_H_mesh_",
+                  "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                  "materialId": "default"
+                },
+                {
+                  "layerName": "CORPO_V_mesh_",
+                  "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                  "materialId": "default"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

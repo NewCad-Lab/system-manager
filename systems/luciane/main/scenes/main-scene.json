@@ -161,11 +161,1532 @@
                 ]
               ],
               "entities": {}
+            },
+            "a685cf61-17fe-4a0d-a82f-842455bd7149": {
+              "entityId": "a685cf61-17fe-4a0d-a82f-842455bd7149",
+              "moduleId": "lin_pla_coz_inf_bal_120",
+              "objFile": "5a41c13e-5a3a-4a77-9a1f-37329ffefda4",
+              "permissions": 3,
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "position": [
+                -17.242451406823832,
+                3.629999999999974,
+                0.04263490207026166
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "sizing": [
+                12,
+                6.760000000000001,
+                5.15
+              ],
+              "entities": {
+                "dbe22a21-1e59-4cf4-b5aa-91ba73d1772d": {
+                  "entityId": "dbe22a21-1e59-4cf4-b5aa-91ba73d1772d",
+                  "moduleId": "luc_pri_ace_tam_1141_2_3",
+                  "aggregateId": "Ag45321",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "lin_pla_coz_inf_bal_120",
+                  "objFile": "14fd619d-40ee-436d-80f8-40527d619c8b",
+                  "permissions": 3,
+                  "layers": [],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    1.5,
+                    0.25,
+                    5.45
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {
+                    "1daa5330-965f-4bf3-afc2-92bfd89bd153": {
+                      "entityId": "1daa5330-965f-4bf3-afc2-92bfd89bd153",
+                      "moduleId": "luc_pri_ace_tam_1145_3_2",
+                      "aggregateId": "Ag66932472",
+                      "modelEntity": false,
+                      "modelAggregateFolderId": "luc_pri_ace_tam_1141_2_3",
+                      "objFile": "60257427-0c9e-4319-b196-6f93900223e3",
+                      "permissions": 3,
+                      "layers": [
+                        {
+                          "layerName": "CORPO_H",
+                          "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                          "materialId": "default"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sizing": [
+                        10,
+                        0.55,
+                        0.15
+                      ],
+                      "normal": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "entities": {}
+                    },
+                    "5455b1e4-54be-49db-9463-4242e7a61cee": {
+                      "entityId": "5455b1e4-54be-49db-9463-4242e7a61cee",
+                      "moduleId": "luc_pri_ace_tam_1145_3_2",
+                      "aggregateId": "Ag669324721",
+                      "modelEntity": false,
+                      "modelAggregateFolderId": "luc_pri_ace_tam_1141_2_3",
+                      "objFile": "60257427-0c9e-4319-b196-6f93900223e3",
+                      "permissions": 3,
+                      "layers": [
+                        {
+                          "layerName": "CORPO_H",
+                          "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                          "materialId": "default"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sizing": [
+                        10,
+                        0.55,
+                        0.15
+                      ],
+                      "normal": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "entities": {}
+                    }
+                  }
+                },
+                "e4c692e9-962b-40fe-a706-79dd70530d33": {
+                  "entityId": "e4c692e9-962b-40fe-a706-79dd70530d33",
+                  "moduleId": "COM_ACE_ARA_1_2_2",
+                  "aggregateId": "Divisor de Talheres",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "lin_pla_coz_inf_bal_120",
+                  "objFile": "264001f0-b374-44f5-bb92-c87712c002e4",
+                  "permissions": 3,
+                  "layers": [
+                    {
+                      "layerName": "CINZA",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    3.1,
+                    0.5,
+                    4.25
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {}
+                },
+                "6eaba71c-5799-4ebb-8f18-ce46bcb621dd": {
+                  "entityId": "6eaba71c-5799-4ebb-8f18-ce46bcb621dd",
+                  "moduleId": "luc_pri_ace_tam_1142_3_2",
+                  "aggregateId": "Ag45321_2",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "lin_pla_coz_inf_bal_120",
+                  "objFile": "e81333ed-3713-4287-8ecd-c1b18005a8a8",
+                  "permissions": 3,
+                  "layers": [],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    13.7,
+                    0.25,
+                    5.45
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {
+                    "4f3b1290-ee9d-4541-8baf-bfd8a88113b4": {
+                      "entityId": "4f3b1290-ee9d-4541-8baf-bfd8a88113b4",
+                      "moduleId": "luc_pri_ace_tam_1145_3_2",
+                      "aggregateId": "Ag6693247212",
+                      "modelEntity": false,
+                      "modelAggregateFolderId": "luc_pri_ace_tam_1142_3_2",
+                      "objFile": "60257427-0c9e-4319-b196-6f93900223e3",
+                      "permissions": 3,
+                      "layers": [
+                        {
+                          "layerName": "CORPO_H",
+                          "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                          "materialId": "default"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sizing": [
+                        10,
+                        0.55,
+                        0.15
+                      ],
+                      "normal": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "entities": {}
+                    }
+                  }
+                },
+                "a5ff5f0e-dab1-4591-9671-a245ea508a7e": {
+                  "entityId": "a5ff5f0e-dab1-4591-9671-a245ea508a7e",
+                  "moduleId": "lin_pla_coz_fun_edi_2",
+                  "aggregateId": "Ag6635433232",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "lin_pla_coz_inf_bal_120",
+                  "objFile": "4f5aad76-3885-4e08-ac5c-d06801a17e5a",
+                  "permissions": 3,
+                  "layers": [],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    5.859999999999999,
+                    6.62,
+                    0.03
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {
+                    "ee90a5cf-0b10-404e-b1e2-9393149ffc96": {
+                      "entityId": "ee90a5cf-0b10-404e-b1e2-9393149ffc96",
+                      "moduleId": "lin_pla_coz_mod_fun_edi",
+                      "aggregateId": "Ag311212122",
+                      "modelEntity": false,
+                      "modelAggregateFolderId": "lin_pla_coz_fun_edi_2",
+                      "objFile": "26b311ed-2f27-4cf4-b994-7287ccf9fe80",
+                      "permissions": 3,
+                      "layers": [
+                        {
+                          "layerName": "FRENTE_V",
+                          "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                          "materialId": "default"
+                        }
+                      ],
+                      "position": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sizing": [
+                        0.5,
+                        0.5,
+                        0.03
+                      ],
+                      "normal": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "entities": {}
+                    }
+                  }
+                },
+                "adee792d-25eb-46f5-9b03-95c626364e16": {
+                  "entityId": "adee792d-25eb-46f5-9b03-95c626364e16",
+                  "moduleId": "lin_pla_mod_inf_pia_515",
+                  "aggregateId": "9d529292-cac8-4eef-8591-a9bbb666d0e3",
+                  "modelEntity": true,
+                  "modelAggregateFolderId": "Ag98935206",
+                  "objFile": "7172485c-dd94-4200-8443-889bbff6fe0c",
+                  "permissions": 3,
+                  "layers": [
+                    {
+                      "layerName": "CORPO_V",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    },
+                    {
+                      "layerName": "CORPO_H",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    },
+                    {
+                      "layerName": "GUIA",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    12,
+                    8.260000000000002,
+                    5.15
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {}
+                },
+                "dd5c2d01-48d9-4f13-afe6-87a4f1083c28": {
+                  "entityId": "dd5c2d01-48d9-4f13-afe6-87a4f1083c28",
+                  "moduleId": "lin_pla_mod_ace_pes",
+                  "aggregateId": "f2e6c9ae-9798-4bb4-b5d3-92c5f1674781",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "80a22283-95a3-457d-b7b4-3b603084e425",
+                  "objFile": "b4786167-3b52-46db-8688-a322e6b23925",
+                  "permissions": 3,
+                  "layers": [
+                    {
+                      "layerName": "CORPO_V",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    },
+                    {
+                      "layerName": "SAPATA",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    0.4,
+                    1.5,
+                    0.4
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {}
+                },
+                "bbe0480f-e025-43df-ab59-f9331aeb1acc": {
+                  "entityId": "bbe0480f-e025-43df-ab59-f9331aeb1acc",
+                  "moduleId": "lin_pla_mod_ace_pes",
+                  "aggregateId": "43e4e3a5-7a6e-40b7-8ac9-0dd58ff33bab",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "80a22283-95a3-457d-b7b4-3b603084e425",
+                  "objFile": "b4786167-3b52-46db-8688-a322e6b23925",
+                  "permissions": 3,
+                  "layers": [
+                    {
+                      "layerName": "CORPO_V",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    },
+                    {
+                      "layerName": "SAPATA",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    0.4,
+                    1.5,
+                    0.4
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {}
+                },
+                "eab9389a-4573-4dd7-8979-f63716d6bca4": {
+                  "entityId": "eab9389a-4573-4dd7-8979-f63716d6bca4",
+                  "moduleId": "lin_pla_mod_ace_pes",
+                  "aggregateId": "cc32d866-554e-4bd1-ae0c-e92a8b123873",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "80a22283-95a3-457d-b7b4-3b603084e425",
+                  "objFile": "b4786167-3b52-46db-8688-a322e6b23925",
+                  "permissions": 3,
+                  "layers": [
+                    {
+                      "layerName": "CORPO_V",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    },
+                    {
+                      "layerName": "SAPATA",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    0.4,
+                    1.5,
+                    0.4
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {}
+                },
+                "56b5d6cb-6259-4e90-b0e6-dca2f1b3cfd0": {
+                  "entityId": "56b5d6cb-6259-4e90-b0e6-dca2f1b3cfd0",
+                  "moduleId": "lin_pla_mod_ace_pes",
+                  "aggregateId": "919866d1-1122-445c-b9b0-8c08e67bd395",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "80a22283-95a3-457d-b7b4-3b603084e425",
+                  "objFile": "b4786167-3b52-46db-8688-a322e6b23925",
+                  "permissions": 3,
+                  "layers": [
+                    {
+                      "layerName": "CORPO_V",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    },
+                    {
+                      "layerName": "SAPATA",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    0.4,
+                    1.5,
+                    0.4
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {}
+                },
+                "4dfb7bc1-a4f0-4598-9bd4-396c1099e911": {
+                  "entityId": "4dfb7bc1-a4f0-4598-9bd4-396c1099e911",
+                  "moduleId": "lin_pla_coz_fre_gir_2_ret_2_2",
+                  "aggregateId": "1",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "826764ae-a72d-430b-925b-c50d068da3d6",
+                  "objFile": "0d55c561-0620-4f27-9f74-23bd0d5346c1",
+                  "permissions": 3,
+                  "layers": [],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    3.95,
+                    1.64,
+                    0.15
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {
+                    "7fb6dc89-93bd-4a9d-b889-1b144204a41e": {
+                      "entityId": "7fb6dc89-93bd-4a9d-b889-1b144204a41e",
+                      "moduleId": "lin_pla_coz_mod_ret_gol_gav_bai",
+                      "aggregateId": "7e4a50fe-f0fb-4d47-a1be-35529ac5b2d0",
+                      "modelEntity": true,
+                      "modelAggregateFolderId": "Ag340350312",
+                      "objFile": "609094b3-6c92-4b8b-a09e-12db4f40ed84",
+                      "permissions": 3,
+                      "layers": [],
+                      "position": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sizing": [
+                        1.45,
+                        1.64,
+                        0.15
+                      ],
+                      "normal": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "entities": {
+                        "8c408575-1c8d-4373-94b4-f1bced014a48": {
+                          "entityId": "8c408575-1c8d-4373-94b4-f1bced014a48",
+                          "moduleId": "lin_pla_coz_mod_ocu_fre_mad",
+                          "aggregateId": "Ag77026482123",
+                          "modelEntity": false,
+                          "modelAggregateFolderId": "lin_pla_coz_mod_ret_gol_gav_bai",
+                          "objFile": "a35ff9ce-dd7e-458c-81c3-7d29d94ac48f",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "FRENTE_V",
+                              "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                              "materialId": "default"
+                            }
+                          ],
+                          "position": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "sizing": [
+                            0.1,
+                            0.1,
+                            0.15
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        },
+                        "d97ae054-5134-4e34-b1be-596445792458": {
+                          "entityId": "d97ae054-5134-4e34-b1be-596445792458",
+                          "moduleId": "lin_pla_coz_ace_pux_ino",
+                          "aggregateId": "a2ef5cb5-2b1a-45d6-88fa-e3b35fad338b",
+                          "modelEntity": true,
+                          "modelAggregateFolderId": "lin_pla_coz_ace_pux12",
+                          "objFile": "f10654ce-6948-4edc-a3a8-d68f08ee2358",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "PUXADOR",
+                              "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                              "materialId": "default"
+                            }
+                          ],
+                          "position": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "sizing": [
+                            1.45,
+                            0.304,
+                            0.17
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "424f86fa-aced-4109-b036-33c2a904f7fa": {
+                  "entityId": "424f86fa-aced-4109-b036-33c2a904f7fa",
+                  "moduleId": "lin_pla_coz_fre_gir_2_ret_2_2",
+                  "aggregateId": "2",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "826764ae-a72d-430b-925b-c50d068da3d6",
+                  "objFile": "0d55c561-0620-4f27-9f74-23bd0d5346c1",
+                  "permissions": 3,
+                  "layers": [],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    3.95,
+                    1.64,
+                    0.15
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {
+                    "dec38bdc-fee8-4861-8465-74901bc188e5": {
+                      "entityId": "dec38bdc-fee8-4861-8465-74901bc188e5",
+                      "moduleId": "lin_pla_coz_mod_ret_gol_gav_bai",
+                      "aggregateId": "7e4a50fe-f0fb-4d47-a1be-35529ac5b2d0",
+                      "modelEntity": true,
+                      "modelAggregateFolderId": "Ag340350312",
+                      "objFile": "609094b3-6c92-4b8b-a09e-12db4f40ed84",
+                      "permissions": 3,
+                      "layers": [],
+                      "position": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sizing": [
+                        1.45,
+                        1.64,
+                        0.15
+                      ],
+                      "normal": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "entities": {
+                        "56f379f6-07c4-4f11-a9ea-e0a10b181be9": {
+                          "entityId": "56f379f6-07c4-4f11-a9ea-e0a10b181be9",
+                          "moduleId": "lin_pla_coz_mod_ocu_fre_mad",
+                          "aggregateId": "Ag77026482123",
+                          "modelEntity": false,
+                          "modelAggregateFolderId": "lin_pla_coz_mod_ret_gol_gav_bai",
+                          "objFile": "a35ff9ce-dd7e-458c-81c3-7d29d94ac48f",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "FRENTE_V",
+                              "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                              "materialId": "default"
+                            }
+                          ],
+                          "position": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "sizing": [
+                            0.1,
+                            0.1,
+                            0.15
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        },
+                        "27228ef8-5944-4c85-b08e-ebcb7ef6cca4": {
+                          "entityId": "27228ef8-5944-4c85-b08e-ebcb7ef6cca4",
+                          "moduleId": "lin_pla_coz_ace_pux_ino",
+                          "aggregateId": "a2ef5cb5-2b1a-45d6-88fa-e3b35fad338b",
+                          "modelEntity": true,
+                          "modelAggregateFolderId": "lin_pla_coz_ace_pux12",
+                          "objFile": "f10654ce-6948-4edc-a3a8-d68f08ee2358",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "PUXADOR",
+                              "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                              "materialId": "default"
+                            }
+                          ],
+                          "position": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "sizing": [
+                            1.45,
+                            0.304,
+                            0.17
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "560ddee1-37cc-4238-b35d-fec5603d1a5c": {
+                  "entityId": "560ddee1-37cc-4238-b35d-fec5603d1a5c",
+                  "moduleId": "lin_pla_coz_fre_gir_2_ret_2_2",
+                  "aggregateId": "3",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "826764ae-a72d-430b-925b-c50d068da3d6",
+                  "objFile": "0d55c561-0620-4f27-9f74-23bd0d5346c1",
+                  "permissions": 3,
+                  "layers": [],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    3.95,
+                    1.64,
+                    0.15
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {
+                    "7e281856-7d4d-496f-904d-25b7584876b2": {
+                      "entityId": "7e281856-7d4d-496f-904d-25b7584876b2",
+                      "moduleId": "lin_pla_coz_mod_ret_gol_gav_bai",
+                      "aggregateId": "7e4a50fe-f0fb-4d47-a1be-35529ac5b2d0",
+                      "modelEntity": true,
+                      "modelAggregateFolderId": "Ag340350312",
+                      "objFile": "609094b3-6c92-4b8b-a09e-12db4f40ed84",
+                      "permissions": 3,
+                      "layers": [],
+                      "position": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sizing": [
+                        1.45,
+                        1.64,
+                        0.15
+                      ],
+                      "normal": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "entities": {
+                        "be700866-f25c-4f90-ba34-693263740083": {
+                          "entityId": "be700866-f25c-4f90-ba34-693263740083",
+                          "moduleId": "lin_pla_coz_mod_ocu_fre_mad",
+                          "aggregateId": "Ag77026482123",
+                          "modelEntity": false,
+                          "modelAggregateFolderId": "lin_pla_coz_mod_ret_gol_gav_bai",
+                          "objFile": "a35ff9ce-dd7e-458c-81c3-7d29d94ac48f",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "FRENTE_V",
+                              "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                              "materialId": "default"
+                            }
+                          ],
+                          "position": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "sizing": [
+                            0.1,
+                            0.1,
+                            0.15
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        },
+                        "7e660eda-17f0-4d2a-88bf-3fbf6ad30dd9": {
+                          "entityId": "7e660eda-17f0-4d2a-88bf-3fbf6ad30dd9",
+                          "moduleId": "lin_pla_coz_ace_pux_ino",
+                          "aggregateId": "a2ef5cb5-2b1a-45d6-88fa-e3b35fad338b",
+                          "modelEntity": true,
+                          "modelAggregateFolderId": "lin_pla_coz_ace_pux12",
+                          "objFile": "f10654ce-6948-4edc-a3a8-d68f08ee2358",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "PUXADOR",
+                              "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                              "materialId": "default"
+                            }
+                          ],
+                          "position": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "sizing": [
+                            1.45,
+                            0.304,
+                            0.17
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "09b78538-790d-4321-a2e0-904232010c25": {
+                  "entityId": "09b78538-790d-4321-a2e0-904232010c25",
+                  "moduleId": "lin_pla_coz_fre_gir_2_ret_2_2",
+                  "aggregateId": "4",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "826764ae-a72d-430b-925b-c50d068da3d6",
+                  "objFile": "0d55c561-0620-4f27-9f74-23bd0d5346c1",
+                  "permissions": 3,
+                  "layers": [],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    3.95,
+                    1.64,
+                    0.15
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {
+                    "20aadfb5-4b4f-46df-96f0-9b8a55fcf93e": {
+                      "entityId": "20aadfb5-4b4f-46df-96f0-9b8a55fcf93e",
+                      "moduleId": "lin_pla_coz_mod_ret_gol_gav_bai",
+                      "aggregateId": "7e4a50fe-f0fb-4d47-a1be-35529ac5b2d0",
+                      "modelEntity": true,
+                      "modelAggregateFolderId": "Ag340350312",
+                      "objFile": "609094b3-6c92-4b8b-a09e-12db4f40ed84",
+                      "permissions": 3,
+                      "layers": [],
+                      "position": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sizing": [
+                        1.45,
+                        1.64,
+                        0.15
+                      ],
+                      "normal": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "entities": {
+                        "0df43f28-9e40-47bc-ba08-bafc47381b51": {
+                          "entityId": "0df43f28-9e40-47bc-ba08-bafc47381b51",
+                          "moduleId": "lin_pla_coz_mod_ocu_fre_mad",
+                          "aggregateId": "Ag77026482123",
+                          "modelEntity": false,
+                          "modelAggregateFolderId": "lin_pla_coz_mod_ret_gol_gav_bai",
+                          "objFile": "a35ff9ce-dd7e-458c-81c3-7d29d94ac48f",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "FRENTE_V",
+                              "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                              "materialId": "default"
+                            }
+                          ],
+                          "position": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "sizing": [
+                            0.1,
+                            0.1,
+                            0.15
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        },
+                        "ee46789a-5fea-4f05-b46a-f4fec4bc1bcf": {
+                          "entityId": "ee46789a-5fea-4f05-b46a-f4fec4bc1bcf",
+                          "moduleId": "lin_pla_coz_ace_pux_ino",
+                          "aggregateId": "a2ef5cb5-2b1a-45d6-88fa-e3b35fad338b",
+                          "modelEntity": true,
+                          "modelAggregateFolderId": "lin_pla_coz_ace_pux12",
+                          "objFile": "f10654ce-6948-4edc-a3a8-d68f08ee2358",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "PUXADOR",
+                              "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                              "materialId": "default"
+                            }
+                          ],
+                          "position": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "sizing": [
+                            1.45,
+                            0.304,
+                            0.17
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "65bce979-2428-4a8e-bb10-eca695b1d607": {
+                  "entityId": "65bce979-2428-4a8e-bb10-eca695b1d607",
+                  "moduleId": "lin_pla_coz_fre_gir_2_ret",
+                  "aggregateId": "Porta Esq2",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "36879dca-5ef8-4221-bb38-d4096f3ff5ef",
+                  "objFile": "b763e882-4699-4cf6-9d4a-7f36e11852a6",
+                  "permissions": 3,
+                  "layers": [],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    1.45,
+                    6.62,
+                    0.15
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {
+                    "e5a33663-88ff-47e9-8872-c3e856c1a3e2": {
+                      "entityId": "e5a33663-88ff-47e9-8872-c3e856c1a3e2",
+                      "moduleId": "lin_pla_coz_mod_ret_gol",
+                      "aggregateId": "0f0da73b-ba60-4271-9241-d2c9bdf11bf1",
+                      "modelEntity": true,
+                      "modelAggregateFolderId": "Ag3403503122",
+                      "objFile": "ead566c6-4ae3-4297-8612-b34707abaa4e",
+                      "permissions": 3,
+                      "layers": [],
+                      "position": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sizing": [
+                        1.45,
+                        6.62,
+                        0.15
+                      ],
+                      "normal": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "entities": {
+                        "790dce4a-5896-4db9-b163-362408bd7ad9": {
+                          "entityId": "790dce4a-5896-4db9-b163-362408bd7ad9",
+                          "moduleId": "lin_pla_coz_mod_ocu_fre_mad",
+                          "aggregateId": "Ag7702648212",
+                          "modelEntity": false,
+                          "modelAggregateFolderId": "lin_pla_coz_mod_ret_gol",
+                          "objFile": "a35ff9ce-dd7e-458c-81c3-7d29d94ac48f",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "FRENTE_V",
+                              "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                              "materialId": "default"
+                            }
+                          ],
+                          "position": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "sizing": [
+                            0.1,
+                            0.1,
+                            0.15
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        },
+                        "33ce9be7-b9f1-434c-93c5-4452fb5db2cc": {
+                          "entityId": "33ce9be7-b9f1-434c-93c5-4452fb5db2cc",
+                          "moduleId": "lin_pla_coz_ace_pux_ino",
+                          "aggregateId": "39978901-cfe6-4429-b68f-3cbcca386f56",
+                          "modelEntity": true,
+                          "modelAggregateFolderId": "lin_pla_coz_ace_pux1",
+                          "objFile": "f10654ce-6948-4edc-a3a8-d68f08ee2358",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "PUXADOR",
+                              "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                              "materialId": "default"
+                            }
+                          ],
+                          "position": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "sizing": [
+                            1.45,
+                            0.304,
+                            0.17
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "2ae0226b-336a-44af-9573-e677f42b66dc": {
+                  "entityId": "2ae0226b-336a-44af-9573-e677f42b66dc",
+                  "moduleId": "lin_pla_coz_fre_gir_2_ret",
+                  "aggregateId": "Porta Dir2",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "36879dca-5ef8-4221-bb38-d4096f3ff5ef",
+                  "objFile": "b763e882-4699-4cf6-9d4a-7f36e11852a6",
+                  "permissions": 3,
+                  "layers": [],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    1.45,
+                    6.62,
+                    0.15
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {
+                    "3592e402-a902-4e36-b293-419febb81e7f": {
+                      "entityId": "3592e402-a902-4e36-b293-419febb81e7f",
+                      "moduleId": "lin_pla_coz_mod_ret_gol",
+                      "aggregateId": "0f0da73b-ba60-4271-9241-d2c9bdf11bf1",
+                      "modelEntity": true,
+                      "modelAggregateFolderId": "Ag3403503122",
+                      "objFile": "ead566c6-4ae3-4297-8612-b34707abaa4e",
+                      "permissions": 3,
+                      "layers": [],
+                      "position": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "sizing": [
+                        1.45,
+                        6.62,
+                        0.15
+                      ],
+                      "normal": [
+                        0,
+                        1,
+                        0
+                      ],
+                      "rotation": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "entities": {
+                        "0943f379-c17a-4acc-b503-b56bca468796": {
+                          "entityId": "0943f379-c17a-4acc-b503-b56bca468796",
+                          "moduleId": "lin_pla_coz_mod_ocu_fre_mad",
+                          "aggregateId": "Ag7702648212",
+                          "modelEntity": false,
+                          "modelAggregateFolderId": "lin_pla_coz_mod_ret_gol",
+                          "objFile": "a35ff9ce-dd7e-458c-81c3-7d29d94ac48f",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "FRENTE_V",
+                              "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                              "materialId": "default"
+                            }
+                          ],
+                          "position": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "sizing": [
+                            0.1,
+                            0.1,
+                            0.15
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        },
+                        "322397b2-c57c-4fec-8bd1-64eced0c46bc": {
+                          "entityId": "322397b2-c57c-4fec-8bd1-64eced0c46bc",
+                          "moduleId": "lin_pla_coz_ace_pux_ino",
+                          "aggregateId": "39978901-cfe6-4429-b68f-3cbcca386f56",
+                          "modelEntity": true,
+                          "modelAggregateFolderId": "lin_pla_coz_ace_pux1",
+                          "objFile": "f10654ce-6948-4edc-a3a8-d68f08ee2358",
+                          "permissions": 3,
+                          "layers": [
+                            {
+                              "layerName": "PUXADOR",
+                              "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                              "materialId": "default"
+                            }
+                          ],
+                          "position": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "sizing": [
+                            1.45,
+                            0.304,
+                            0.17
+                          ],
+                          "normal": [
+                            0,
+                            1,
+                            0
+                          ],
+                          "rotation": [
+                            0,
+                            0,
+                            0
+                          ],
+                          "entities": {}
+                        }
+                      }
+                    }
+                  }
+                },
+                "437af6e9-7ab1-4eec-a7e7-3230ed2c3b99": {
+                  "entityId": "437af6e9-7ab1-4eec-a7e7-3230ed2c3b99",
+                  "moduleId": "lin_pla_coz_mod_ocu_fro_cor",
+                  "aggregateId": "Ag5633184",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "511aadc0-324d-4d98-92d4-6e7ffdf7dc59",
+                  "objFile": "c04b0618-2f7b-41c6-9fa1-e6330367bb03",
+                  "permissions": 3,
+                  "layers": [
+                    {
+                      "layerName": "CORPO_H",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    },
+                    {
+                      "layerName": "CORPO_V",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    2.5,
+                    1,
+                    3.4
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {}
+                },
+                "3a8032b1-2bca-4def-b861-34ce698554ad": {
+                  "entityId": "3a8032b1-2bca-4def-b861-34ce698554ad",
+                  "moduleId": "lin_pla_coz_mod_ocu_fro_cor",
+                  "aggregateId": "Ag5633184_2",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "511aadc0-324d-4d98-92d4-6e7ffdf7dc59",
+                  "objFile": "c04b0618-2f7b-41c6-9fa1-e6330367bb03",
+                  "permissions": 3,
+                  "layers": [
+                    {
+                      "layerName": "CORPO_H",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    },
+                    {
+                      "layerName": "CORPO_V",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    2.5,
+                    1,
+                    3.4
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {}
+                },
+                "8e2ac366-07aa-4dee-835b-2614d774b228": {
+                  "entityId": "8e2ac366-07aa-4dee-835b-2614d774b228",
+                  "moduleId": "lin_pla_coz_mod_ocu_fro_cor",
+                  "aggregateId": "Ag5633184_2_2",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "511aadc0-324d-4d98-92d4-6e7ffdf7dc59",
+                  "objFile": "c04b0618-2f7b-41c6-9fa1-e6330367bb03",
+                  "permissions": 3,
+                  "layers": [
+                    {
+                      "layerName": "CORPO_H",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    },
+                    {
+                      "layerName": "CORPO_V",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    2.5,
+                    1,
+                    3.4
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {}
+                },
+                "c8f22a54-de92-4b4b-bcea-f7b5f7fc02c9": {
+                  "entityId": "c8f22a54-de92-4b4b-bcea-f7b5f7fc02c9",
+                  "moduleId": "lin_pla_coz_mod_ocu_fro_cor",
+                  "aggregateId": "Ag5633184_2_2_2",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "511aadc0-324d-4d98-92d4-6e7ffdf7dc59",
+                  "objFile": "c04b0618-2f7b-41c6-9fa1-e6330367bb03",
+                  "permissions": 3,
+                  "layers": [
+                    {
+                      "layerName": "CORPO_H",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    },
+                    {
+                      "layerName": "CORPO_V",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    2.5,
+                    1,
+                    3.4
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {}
+                }
+              },
+              "parentId": "floor.principal"
             }
           }
         },
-        "light.principal": {
-          "entityId": "light.principal",
+        "light.5d67fbfe-30d7-4341-814e-940d72ae66a5": {
+          "entityId": "light.5d67fbfe-30d7-4341-814e-940d72ae66a5",
           "moduleId": "",
           "permissions": 0,
           "moduleLayerId": "",
@@ -191,10 +1712,10 @@
           ],
           "entities": {},
           "lights": {
-            "color": "rgb(255, 255, 255)",
-            "intensity": 1300,
+            "decay": 1.6,
             "distance": 1000,
-            "decay": 1.6
+            "intensity": 1300,
+            "color": "rgb(255, 255, 255)"
           }
         }
       }

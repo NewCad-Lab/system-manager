@@ -3,13 +3,31 @@ import os
 import shutil
 import sqlite3
 import uvicorn
-from fastapi import FastAPI, UploadFile, File, HTTPException, Query
+from fastapi import FastAPI, UploadFile, File, HTTPException, Query, Request
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from datetime import datetime
 from pathlib import Path
+import asyncio
+
 
 app = FastAPI()
+
+rota_lock = asyncio.Lock()
+
+
+# Middleware para gerenciar o lock global em todas as rotas
+@app.middleware("http")
+async def single_request_middleware(request: Request, call_next):
+    if rota_lock.locked():
+        # Se o lock já está ativo, retorna erro
+        raise HTTPException(status_code=409, detail="A rota já está processando outra requisição.")
+
+    # Adquire o lock e chama a próxima função da rota
+    async with rota_lock:
+        response = await call_next(request)
+
+    return response
 
 def convert_string_to_datetime(date_string: str) -> float:
     return datetime.strptime(date_string, '%Y-%m-%d %H:%M:%S').timestamp() * 1000
@@ -343,10 +361,13 @@ def zip_folder(folder_path):
 async def download_zip():
     folder_path = "systems/luciane/main"
 
+
     if not os.path.isdir(folder_path):
         raise HTTPException(status_code=404, detail="Directory not found")
 
     zip_file_path = zip_folder(folder_path)
+
+
 
     return FileResponse(zip_file_path, media_type='application/zip', filename=os.path.basename(zip_file_path))
 

@@ -1,0 +1,125 @@
+{
+  "id": "b558ccf5-ac16-4347-9f0c-c8ad9bbd583e",
+  "moduleLayers": {
+    "floor": {
+      "moduleLayerId": "floor",
+      "layerDescription": "Piso",
+      "hidden": false,
+      "countModules": 1
+    },
+    "wall": {
+      "moduleLayerId": "wall",
+      "layerDescription": "Paredes",
+      "hidden": false,
+      "countModules": 2
+    }
+  },
+  "entities": {
+    "root": {
+      "entityId": "root",
+      "permissions": 0,
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "sizing": [
+        200,
+        0,
+        200
+      ],
+      "entities": {
+        "floor.principal": {
+          "entityId": "floor.principal",
+          "permissions": 0,
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "sizing": [
+            40,
+            0,
+            40
+          ],
+          "entities": {
+            "53b4d27d-8877-47f7-b650-54ec660b2483": {
+              "entityId": "53b4d27d-8877-47f7-b650-54ec660b2483",
+              "moduleId": "b558ccf5-ac16-4347-9f0c-c8ad9bbd583e",
+              "objFile": "9d8afced-3a7f-494e-8618-492b6aba2141",
+              "permissions": 3,
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "sizing": [
+                0,
+                0,
+                0
+              ],
+              "entities": {}
+            },
+            "cc1aeb78-071f-456b-8916-2557b9cb3ed4": {
+              "entityId": "cc1aeb78-071f-456b-8916-2557b9cb3ed4",
+              "moduleId": "b558ccf5-ac16-4347-9f0c-c8ad9bbd583e",
+              "objFile": "9d8afced-3a7f-494e-8618-492b6aba2141",
+              "permissions": 3,
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "sizing": [
+                0,
+                0,
+                0
+              ],
+              "entities": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

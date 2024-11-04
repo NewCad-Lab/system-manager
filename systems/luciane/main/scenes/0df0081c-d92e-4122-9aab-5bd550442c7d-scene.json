@@ -1,0 +1,162 @@
+{
+  "id": "0df0081c-d92e-4122-9aab-5bd550442c7d",
+  "moduleLayers": {
+    "floor": {
+      "moduleLayerId": "floor",
+      "layerDescription": "Piso",
+      "hidden": false,
+      "countModules": 1
+    },
+    "wall": {
+      "moduleLayerId": "wall",
+      "layerDescription": "Paredes",
+      "hidden": false,
+      "countModules": 2
+    },
+    "d320d6e7-dc45-431e-b3d3-b346bd5b4440": {
+      "moduleLayerId": "d320d6e7-dc45-431e-b3d3-b346bd5b4440",
+      "layerDescription": "module",
+      "hidden": false,
+      "countModules": 1
+    },
+    "ea7dd37a-e54b-4ad0-85e0-b41dcacf2a95": {
+      "moduleLayerId": "ea7dd37a-e54b-4ad0-85e0-b41dcacf2a95",
+      "layerDescription": "aggagg",
+      "hidden": false,
+      "countModules": 1
+    }
+  },
+  "entities": {
+    "root": {
+      "entityId": "root",
+      "permissions": 0,
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "sizing": [
+        200,
+        0,
+        200
+      ],
+      "entities": {
+        "floor.principal": {
+          "entityId": "floor.principal",
+          "permissions": 0,
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "sizing": [
+            40,
+            0,
+            40
+          ],
+          "entities": {
+            "3dc745a9-6bc9-4208-9a87-94b028035c2e": {
+              "entityId": "3dc745a9-6bc9-4208-9a87-94b028035c2e",
+              "moduleId": "0df0081c-d92e-4122-9aab-5bd550442c7d",
+              "objFile": "b6b5b636-b60f-4f80-b3f6-2c8f75e78c33",
+              "permissions": 3,
+              "moduleLayerId": "d320d6e7-dc45-431e-b3d3-b346bd5b4440",
+              "normal": [
+                0,
+                1,
+                0
+              ],
+              "position": [
+                0,
+                11.8,
+                0
+              ],
+              "rotation": [
+                0,
+                0,
+                0
+              ],
+              "sizing": [
+                8.03,
+                23.6,
+                5.45
+              ],
+              "entities": {
+                "f91cc281-c1fa-4f1d-9a9a-0998c05360eb": {
+                  "entityId": "f91cc281-c1fa-4f1d-9a9a-0998c05360eb",
+                  "moduleId": "c1af581d-cdaf-4000-b52d-c73ee2b681c0",
+                  "aggregateId": "da5efee4-f05a-4cd7-bd9d-ef6fb56fb7e1",
+                  "modelEntity": false,
+                  "modelAggregateFolderId": "0df0081c-d92e-4122-9aab-5bd550442c7d",
+                  "objFile": "fac4b2c2-fb46-49a1-83a7-5db32a6d2806",
+                  "permissions": 3,
+                  "moduleLayerId": "ea7dd37a-e54b-4ad0-85e0-b41dcacf2a95",
+                  "layers": [
+                    {
+                      "layerName": "FRENTE_V_mesh_",
+                      "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                      "materialId": "default"
+                    }
+                  ],
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "sizing": [
+                    2,
+                    2,
+                    2
+                  ],
+                  "normal": [
+                    0,
+                    1,
+                    0
+                  ],
+                  "rotation": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "entities": {}
+                }
+              },
+              "layers": [
+                {
+                  "layerName": "CORPO_H_mesh_",
+                  "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                  "materialId": "default"
+                },
+                {
+                  "layerName": "CORPO_V_mesh_",
+                  "materialConfig": "{\"type\":\"default\", \"color\" : \"#add8e6\" ,\"metalness\":0,\"transmission\":0,\"thickness\":0,\"roughness\":100}",
+                  "materialId": "default"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
